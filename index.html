@@ -3,174 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Melissa Shinfuku</title>
+<meta name="description" content="Personal academic website of Your Name. Research, publications, and teaching.">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    background: #0f172a;
-    color: #f1f5f9;
-    line-height: 1.6;
-}
-
-header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #3b82f6, #9333ea);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-header p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 12px 28px;
-    border-radius: 30px;
-    background: white;
-    color: #111827;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-section {
-    padding: 80px 10%;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2rem;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 15px;
-    transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    background: #334155;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #020617;
-    font-size: 0.9rem;
-    opacity: 0.7;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(10px);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-    <div><strong>YourName</strong></div>
-    <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <div class="nav-container">
+        <span class="logo">Melissa Shinfuku</span>
+        <div>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 </nav>
 
 <header>
-    <div>
-        <h1>Hi, I'm Your Name</h1>
-        <p>Web Developer • Designer • Creator</p>
-        <a href="#projects" class="btn">View My Work</a>
+    <div class="header-content">
+        <img src="assets/profile.jpg" alt="Profile photo" class="profile-pic">
+        <div>
+            <h1>Melissa Shinfuku</h1>
+            <p>Postdoctoral Scholar</p>
+            <p>Case Western Reserve University</p>
+        </div>
     </div>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        I build clean, responsive websites and modern web apps.
-        Passionate about creating beautiful and functional user experiences.
+    <h2>About</h2>
+    <p>
+        I am a Postdoctoral Scholar at Case Western Reserve University in the <a href="https://www.thelewinlab.com" target="_blank" rel="noopener">Lewin Lab</a>.
+        Broadly, I am interested in understanding how microbial diversity drives larger, ecosystem scale processes. 
+        I received my PhD from the UMass Amherst, where I was advised by <a href="https://kristendeangelis.net/" target="_blank" rel="noopener">Dr. Kristen M. DeAngelis</a>. 
+        My dissertation research investigated the effects of microbial diversity on soil carbon formation and ecosystem function.
     </p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="card">
-            <h3>Project One</h3>
-            <p>A short description of your project.</p>
-        </div>
-        <div class="card">
-            <h3>Project Two</h3>
-            <p>A short description of your project.</p>
-        </div>
-        <div class="card">
-            <h3>Project Three</h3>
-            <p>A short description of your project.</p>
-        </div>
+<section id="research">
+    <h2>Research</h2>
+    <ul>
+        <li>Climate change effects on bacterial diversity</li>
+        <li>Bacterial strain level diversity in the vaginal microbiome</li>
+        <li>Microbial diversity and soil carbon formation</li>
+    </ul>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="publication">
+        <p><strong>Your Name</strong>. (2026). Title of paper. <em>Journal Name</em>.</p>
     </div>
+    <div class="publication">
+        <p><strong>Your Name</strong>. (2025). Another paper title. <em>Conference Name</em>.</p>
+    </div>
+</section>
+
+<section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+        <li>Course Name – Semester Year</li>
+        <li>Course Name – Semester Year</li>
+    </ul>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p style="text-align:center;">
-        Email me at <strong>your@email.com</strong>
-    </p>
+    <p>Email: mss396@case.edu</p>
 </section>
 
 <footer>
-    © 2026 Your Name. Built with ❤️
+    <p>© 2026 MelissaShinfuku</p>
 </footer>
 
 </body>
