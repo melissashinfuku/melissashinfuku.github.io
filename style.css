@@ -1,36 +1,79 @@
+/* Base layout */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Clean, professional sans-serif */
+    font-size: 18px;
+    line-height: 1.7;
+    color: #222;
+    background-color: #ffffff;
     margin: 0;
-    background-color: #0f172a;
-    color: white;
-    line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #3b82f6, #9333ea);
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h1, h2 {
-    margin-bottom: 20px;
-}
-
-.project {
-    background: #1e293b;
+/* Center content with readable width */
+section, header, nav, footer {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
 
+/* Navigation */
+nav {
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: underline;
+    color: inherit; /* subtle style */
+}
+
+nav a:hover {
+    opacity: 0.8; /* small hover effect */
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Links (subtle) */
+a {
+    color: inherit;        /* same as surrounding text */
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: inherit;        /* Same color as surrounding text */
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.8;          /* Slight fade on hover (optional but nice) */
 }
