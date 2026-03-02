@@ -69,11 +69,9 @@ footer {
     color: #555;
 }
 
-a {
-    color: inherit;        /* Same color as surrounding text */
-    text-decoration: underline;
-}
-
-a:hover {
-    opacity: 0.8;          /* Slight fade on hover (optional but nice) */
+.profile-pic {
+    width: 100px;     /* smaller size */
+    height: auto;     /* maintain aspect ratio */
+    border-radius: 50%; /* keeps it circular */
+    max-width: 30%; /* never bigger than 30% of container */
 }
