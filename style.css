@@ -27,8 +27,8 @@ body {
     left: 0;
     height: 100vh;            /* Full viewport height */
     width: 300px;
-    background-color: #7896b5;
-    color: white;
+    background-color: #C2DDF2;
+    color: black;
     padding: 40px 20px;
     text-align: center;
     overflow-y: auto;         /* Scroll if content is tall */
