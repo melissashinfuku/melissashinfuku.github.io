@@ -60,8 +60,11 @@ body {
 
 /* Profile Image */
 .profile-pic {
-    width: 150px;
+    width: 170px;              /* Slightly larger frame */
+    height: 170px;             /* Make it square */
     border-radius: 50%;
+    object-fit: cover;         /* Crops instead of shrinking */
+    object-position: center;   /* Controls zoom focal point */
     margin-bottom: 20px;
 }
 
