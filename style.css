@@ -64,7 +64,7 @@ body {
     height: 170px;             /* Make it square */
     border-radius: 50%;
     object-fit: cover;         /* Crops instead of shrinking */
-    object-position: center;   /* Controls zoom focal point */
+    object-position: center 30%;   /* Controls zoom focal point */
     margin-bottom: 20px;
 }
 
