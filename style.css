@@ -1,4 +1,14 @@
 /* Reset */
+/* Global Link Style (Subtle Academic Style) */
+a {
+    color: inherit;              /* Same color as surrounding text */
+    text-decoration: underline;  /* Always underlined */
+    text-underline-offset: 3px;  /* Makes underline look cleaner */
+}
+
+a:hover {
+    opacity: 0.7;                /* Subtle hover effect */
+}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
