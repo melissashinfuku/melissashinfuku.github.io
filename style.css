@@ -1,4 +1,7 @@
 /* Reset */
+* {
+    box-sizing: border-box;
+} 
 /* Global Link Style (Subtle Academic Style) */
 a {
     color: inherit;              /* Same color as surrounding text */
@@ -25,7 +28,7 @@ body {
     position: fixed;          /* Makes sidebar fixed */
     top: 0;
     left: 0;
-    height: 100vh;            /* Full viewport height */
+    min-height: 100vh;            /* Full viewport height */
     width: 300px;
     background-color: #829EB3;
     color: black;
